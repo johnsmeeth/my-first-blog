@@ -1,0 +1,24 @@
+{% load staticfiles %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Post list</title>
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+</head>
+<body>
+    <div class="w3-container w3-card-4">
+        <div class="w3-container">
+            <h1>Django blog</h1>
+        </div>
+        <ul class="w3-ul w3-border-top">
+            {% block content %}
+
+            {% endblock %}
+        </ul>
+    </div>
+</body>
+</html>

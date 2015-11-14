@@ -1,0 +1,12 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    <li>
+        <h3>{{ post.title }}</h3>
+        <div>
+            <i class="fa fa-calendar-minus-o"></i>: {{ post.created_date }}
+            <i class="fa fa-user-md"></i>: {{ post.author }}
+        </div>
+        <p>{{ post.text }}</p>
+    </li>
+{% endblock %}
