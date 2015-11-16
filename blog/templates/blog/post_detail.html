@@ -6,6 +6,7 @@
         <div>
             <i class="fa fa-calendar-minus-o"></i>: {{ post.created_date }}
             <i class="fa fa-user-md"></i>: {{ post.author }}
+            <a href="{% url 'post_edit' pk=post.pk %}"><i class="fa fa-pencil-square-o w3-right w3-xlarge"></i></a>
         </div>
         <p>{{ post.text }}</p>
     </li>
