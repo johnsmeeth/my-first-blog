@@ -7,6 +7,10 @@
             <div>
                 <i class="fa fa-user-md"></i>: {{ post.author }}
                 <i class="fa fa-calendar-minus-o"></i>: {{ post.published_date }}
+
+                <a href="{% url 'post_unpublish' pk=post.pk %}">
+                    <button class="w3-btn w3-teal w3-round w3-right w3-margin-4">Unpublish</button>
+                </a>
             </div>
             <p>{{ post.text | slice:":500" }}</p>
         </li>
